@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <!-- Hidden -->
+             <input type="hidden" name="form_type" value="12345">
+             <!-- Text -->
+        <label>Full Name: </label>
+        <input type="text" name="name" placeholder="Enter your name..."" required>
+        <br>
+        <br>
+        <label>Email: </label>
+        <input type="email"  name="Email">
+        <br>
+        <br>
+        <label>Password: <span style="color: red;">*</span></label>
+        <input type="password" name="Password" required>
+        <br>
+        <br>
+        <label>Mobile No: </label>
+        <input type="tel" id="mobile" placeholder="Enter Mobile No..." name="Mobile No">
+        <br>
+        <br>
+        <label>Website: </label>
+        <input type="url" name="website" placeholder="Enter website URL...">
+        <br>
+        <br>
+        <label>Search Course: </label>
+        <input type="search" name="search" placeholder="Search...">
+        <br>
+        <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Other Details</legend>
+         <label>Age: </label>
+        <input type="number" name="age" min="1" max="150">
+        <br>
+        <br>
+        <label>Date of Birth: </label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Preferred Time: </label>
+        <input type="time">
+        <br>
+        <br>
+        <label>Meeting Date & Time: </label>
+        <input type="datetime-local">
+        <br>
+        <br>
+        <label>Gender: </label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <br>
+        <br>
+        <label>Hobbies: </label>
+        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="cooking"> Cooking</label>
+        <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+        <br>
+        <br>
+        <label>Favorite color: </label>
+        <input type="color" name="favcolor">
+        <br>
+        <br>
+        <label>Skill Level: </label>
+        <input type="range" name="skill" min="1" max="5">
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Selection: </legend>
+        <label>Course: </label>
+        <select name="tech" id="tech">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <br>
+        <br>
+        <label>City: </label>
+        <input type="text" name="city">
+        <br>
+        <br>
+        <label>Upload Photo: </label>
+        <input type="file">
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea name="comments" rows="5" cols="30" placeholder="Write your comments here..."></textarea>
+        </fieldset>
+        <input type="submit"> &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="reset">Cancel</button>
+        <button type="button" disabled>Disabled Button</button>
+        <br>
+        <br>
+    </form>
+</body>
+</html>
